@@ -1,0 +1,54 @@
+
+1. hukum newton
+
+STORE "m" with 600
+STORE "a" with 2
+STORE "f" without value
+CALCULATE "m" times "a"
+SET "f" value with calculation result
+DISPLAY "f"
+
+
+----------------------------------------------------------------------------------------
+
+2. Tahun Kabisat
+
+STORE "ket" without value
+STORE "tahun" with any number
+
+IF "tahun" mod 4 AND "tahun" NOT mod 100
+  SET "ket" with "Tahun Kabisat"
+ELSE IF "tahun" mod 4 AND "tahun" mod 100 AND tahun mod 400
+  SET "ket" with "Tahun Kabisat"
+ELSE
+  SET "ket" with "Bukan Tahun Kabisat"
+
+DISPLAY "ket"
+
+
+----------------------------------------------------------------------------------------
+
+3. Laundry
+
+STORE "pakaian" with 0
+
+for "pakaian" < 21
+  ADD "pakaian" by 1
+
+DISPLAY "Mesin cuci akan menyala"
+
+
+
+----------------------------------------------------------------------------------------
+
+4. Periksa Kuku
+
+STORE "murid" with "panjang" or "pendek"
+STORE "jumlah_murid" with 40
+STORE "guru_cek" with 1
+
+for "guru_cek" <= "jumlah_murid"
+  if "murid" == panjang
+    DO "hukuman"
+  ELSE
+    DO "pujian"
