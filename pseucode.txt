@@ -32,7 +32,7 @@ DISPLAY "ket"
 
 STORE "pakaian" with 0
 
-for "pakaian" < 21
+WHILE "pakaian" < 21
   ADD "pakaian" by 1
 
 DISPLAY "Mesin cuci akan menyala"
@@ -47,7 +47,7 @@ STORE "murid" with "panjang" or "pendek"
 STORE "jumlah_murid" with 40
 STORE "guru_cek" with 1
 
-for "guru_cek" <= "jumlah_murid"
+WHILE "guru_cek" <= "jumlah_murid"
   ADD "guru_cek" by 1
   if "murid" == panjang
     DO "hukuman"
