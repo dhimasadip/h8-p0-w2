@@ -48,6 +48,7 @@ STORE "jumlah_murid" with 40
 STORE "guru_cek" with 1
 
 for "guru_cek" <= "jumlah_murid"
+  ADD "guru_cek" by 1
   if "murid" == panjang
     DO "hukuman"
   ELSE
