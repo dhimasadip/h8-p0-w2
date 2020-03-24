@@ -2,7 +2,9 @@
 ////////////////////////////////////////////////
 // TUGAS 1
 
-var shoutOut = () => 'Halo Function!'
+var shoutOut = function() {
+    return 'Halo Function!'
+}
 
 console.log(shoutOut()) // Menampilkan "Halo Function!" di console
 
