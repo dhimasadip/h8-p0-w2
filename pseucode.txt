@@ -34,6 +34,7 @@ STORE "pakaian" with 0
 
 WHILE "pakaian" < 21
   ADD "pakaian" by 1
+END WHILE
 
 DISPLAY "Mesin cuci akan menyala"
 
@@ -48,8 +49,12 @@ STORE "jumlah_murid" with 40
 STORE "guru_cek" with 1
 
 WHILE "guru_cek" <= "jumlah_murid"
-  ADD "guru_cek" by 1
+  
   if "murid" == panjang
     DO "hukuman"
   ELSE
     DO "pujian"
+  END IF
+  ADD "guru_cek" by 1
+
+END WHILE
