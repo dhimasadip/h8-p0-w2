@@ -16,9 +16,9 @@ DISPLAY "f"
 STORE "ket" without value
 STORE "tahun" with any number
 
-IF "tahun" mod 4 AND "tahun" NOT mod 100
+IF "tahun" mod 4 equal to 0 AND "tahun" mod 100 NOT equal to 0
   SET "ket" with "Tahun Kabisat"
-ELSE IF "tahun" mod 4 AND "tahun" mod 100 AND tahun mod 400
+ELSE IF "tahun" mod 4 equal to 0 AND "tahun" mod 100 equal to 0 AND tahun mod 400 equal to 0
   SET "ket" with "Tahun Kabisat"
 ELSE
   SET "ket" with "Bukan Tahun Kabisat"
