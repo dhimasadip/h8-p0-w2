@@ -1,6 +1,6 @@
 
 ////////////////////////////////////////////////
-// 1. Menyusun Barisan Bintang
+// TUGAS 1
 
 var shoutOut = () => 'Halo Function!'
 
@@ -9,7 +9,7 @@ console.log(shoutOut()) // Menampilkan "Halo Function!" di console
 
 
 ////////////////////////////////////////////////
-// 2. Menyusun Barisan Bintang Dengan Nested Looping
+// TUGAS 2
 
 function calculateMultiply(num1, num2) {
     return num1 * num2
@@ -24,7 +24,7 @@ console.log(hasilPerkalian); // Menampilkan angka 30
 
 
 ////////////////////////////////////////////////
-// 3. Menyusun Barisan Tangga Bintang Dengan Nested Looping
+// TUGAS 3
 
 function processSentence(name,age,address,hobby) {
     return `Nama saya ${name}, umur saya ${age} tahun, alamat saya di ${address}, dan saya punya hobby yaitu ${hobby}!`
