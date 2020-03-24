@@ -1,27 +1,29 @@
 
-1. hukum newton
+1. Hukum Newton
 
-STORE "m" with 600
-STORE "a" with 2
-STORE "f" without value
-CALCULATE "m" times "a"
-SET "f" value with calculation result
-DISPLAY "f"
+SET "massa" with 600 AS INTEGER
+SET "percepatan" with 2 AS INTEGER
+SET "gaya" without value
+
+CALCULATE "massa" times "percepatan"
+SET "gaya" value with calculation result
+DISPLAY "gaya"
 
 
 ----------------------------------------------------------------------------------------
 
 2. Tahun Kabisat
 
-STORE "ket" without value
-STORE "tahun" with any number
+SET "ket" without value
+SET "tahun" with any number AS INTEGER
 
-IF "tahun" mod 4 equal to 0 AND "tahun" mod 100 NOT equal to 0
-  SET "ket" with "Tahun Kabisat"
-ELSE IF "tahun" mod 4 equal to 0 AND "tahun" mod 100 equal to 0 AND tahun mod 400 equal to 0
-  SET "ket" with "Tahun Kabisat"
+IF "tahun" mod 4 EQUAL TO 0 AND "tahun" mod 100 NOT EQUAL TO 0 THEN
+  SET "ket" with "Tahun Kabisat" AS STRING
+ELSE IF "tahun" mod 4 EQUAL TO 0 AND "tahun" mod 100 EQUAL TO 0 AND "tahun" mod 400 EQUAL TO 0 THEN
+  SET "ket" with "Tahun Kabisat" AS STRING
 ELSE
-  SET "ket" with "Bukan Tahun Kabisat"
+  SET "ket" with "Bukan Tahun Kabisat" AS STRING
+END IF
 
 DISPLAY "ket"
 
@@ -30,10 +32,10 @@ DISPLAY "ket"
 
 3. Laundry
 
-STORE "pakaian" with 0
+SET "pakaian" with 0 AS INTEGER
 
 WHILE "pakaian" < 21
-  ADD "pakaian" by 1
+  INCREMENT "pakaian" by 1
 END WHILE
 
 DISPLAY "Mesin cuci akan menyala"
@@ -44,17 +46,17 @@ DISPLAY "Mesin cuci akan menyala"
 
 4. Periksa Kuku
 
-STORE "murid" with "panjang" or "pendek"
-STORE "jumlah_murid" with 40
-STORE "guru_cek" with 1
+SET "murid" with "panjang" or "pendek" AS STRING
+SET "jumlah_murid" with 40 AS INTEGER
+SET "guru_cek" with 1 AS INTEGER
 
 WHILE "guru_cek" <= "jumlah_murid"
   
-  if "murid" == panjang
+  IF "murid" EQUAL TO "panjang"
     DO "hukuman"
   ELSE
     DO "pujian"
   END IF
-  ADD "guru_cek" by 1
+  INCREMENT "guru_cek" by 1
 
 END WHILE
